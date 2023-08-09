@@ -17,25 +17,25 @@ public class DLL
 	static int count=0;
 	public static void main(String[] args) 
 	{
-		//1³Ğ³y¶}ÀY
+		//1å‰µé€ é–‹é ­
 		Dnode.p1=new Dnode(null, 50, null);
 		list();
 		
-		//2´¡¤J§Àºİ
+		//2æ’å…¥å°¾ç«¯
 		Dnode.p1.next=new Dnode(Dnode.p1, 60, null);
 		list();
 		
-		//3´¡¤J¶}ÀY
+		//3æ’å…¥é–‹é ­
 		Dnode.p1=new Dnode(null, 30, Dnode.p1);
 		Dnode.p1.next.prev=Dnode.p1;
 		list();
 		
-		//4´¡¤J¤¤¶¡
+		//4æ’å…¥ä¸­é–“
 		Dnode.p1.next=new Dnode(Dnode.p1, 40, Dnode.p1.next);
 		Dnode.p1.next.next.prev=Dnode.p1.next;
 		list();
 		
-		//5¦s¨ú²Ä2­Ó¸`ÂI¸ê®Æ©óvariable x1;²Ä3­Ó¸`ÂI¸ê®Æ©óvariable x2;
+		//5å­˜å–ç¬¬2å€‹ç¯€é»è³‡æ–™æ–¼variable x1;ç¬¬3å€‹ç¯€é»è³‡æ–™æ–¼variable x2;
 		int x1;
 		x1=Dnode.p1.next.data;
 		int x2;
@@ -45,20 +45,20 @@ public class DLL
 		System.out.println("x1 = "+x1+", x2 = "+x2);
 		System.out.println("");
 		
-		//6§R°£¤¤¶¡node
+		//6åˆªé™¤ä¸­é–“node
 		Dnode.p1.next=Dnode.p1.next.next;
 		Dnode.p1.next.prev=Dnode.p1;
 		list();
 		
-		//7§ó§ï²Ä2­Ó¸`ÂI¸ê®Æ¬°55
+		//7æ›´æ”¹ç¬¬2å€‹ç¯€é»è³‡æ–™ç‚º55
 		Dnode.p1.next.data=55;
 		list();
 		
-		//8§R°£§Àºİnode
+		//8åˆªé™¤å°¾ç«¯node
 		Dnode.p1.next.next=null;
 		list();
 
-		//9§ó§ï¸`ÂIÀY¨ì§Àªº¶¶§Ç
+		//9æ›´æ”¹ç¯€é»é ­åˆ°å°¾çš„é †åº
 		Dnode.p1=Dnode.p1.next;
 		Dnode.p1.next=Dnode.p1.prev;
 		Dnode.p1.prev=null;
@@ -66,12 +66,12 @@ public class DLL
 		Dnode.p1.next.next=null;
 		list();
 		
-		//10´¡¤J¤¤¶¡
+		//10æ’å…¥ä¸­é–“
 		Dnode.p1.next=new Dnode(Dnode.p1, 45, Dnode.p1.next);
 		Dnode.p1.next.next.prev=Dnode.p1.next;
 		list();
 		
-		//11§R°£§Àºİ¸`ÂI¨Ã»s§@Àôª¬¦ê¦C
+		//11åˆªé™¤å°¾ç«¯ç¯€é»ä¸¦è£½ä½œç’°ç‹€ä¸²åˆ—
 		Dnode.p1.next.next=Dnode.p1;
 		Dnode.p1.prev=Dnode.p1.next;
 		count++;

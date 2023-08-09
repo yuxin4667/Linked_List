@@ -14,35 +14,35 @@ public class SLL
 	static int count=0;
 	public static void main(String[] args) 
 	{
-		//1´¡¤J¶}ÀY
+		//1æ’å…¥é–‹é ­
 		node.tail=node.p1=new node(40, null);
 		list();
 		
-		//2´¡¤J¶}ÀY
+		//2æ’å…¥é–‹é ­
 		node.p1=new node(30, node.p1);
 		list();
 		
-		//3´¡¤J§Àºİ
+		//3æ’å…¥å°¾ç«¯
 		node.tail=node.p1.next.next=new node(50, null);
 		list();
 		
-		//4´¡¤J§Àºİ
+		//4æ’å…¥å°¾ç«¯
 		node.tail=node.p1.next.next.next=new node(60, null);
 		list();
 		
-		//5´¡¤J¤¤¶¡
+		//5æ’å…¥ä¸­é–“
 		node.p1.next=new node(35, node.p1.next);
 		list();
 		
-		//6´¡¤J¤¤¶¡
+		//6æ’å…¥ä¸­é–“
 		node.p1.next.next.next=new node(45, node.p1.next.next.next);
 		list();
 		
-		//7§R°£¶}ÀYnode
+		//7åˆªé™¤é–‹é ­node
 		node.p1=node.p1.next;
 		list();
 		
-		//8§R°£§Àºİnode
+		//8åˆªé™¤å°¾ç«¯node
 		node temp=node.p1;
 		while(temp.next.next!=null)
 			temp=temp.next;
@@ -50,12 +50,12 @@ public class SLL
 		node.tail=temp;
 		list();
 		
-		//9§R°£¤¤¶¡node
+		//9åˆªé™¤ä¸­é–“node
 		int num=0;
 		node.p1.next.next=node.p1.next.next.next;
 		list();
 		
-		//10ÅÜ¦¨Àôª¬
+		//10è®Šæˆç’°ç‹€
 		node.tail.next=node.p1;
 
 		temp=node.p1;
@@ -68,9 +68,9 @@ public class SLL
 		System.out.println(temp.data+"...");
 		System.out.println(" ");
 		
-		node.tail.next=null;//§âÀôª¬¦ê¦C§ï¦^¤@¯ë¦ê¦C
+		node.tail.next=null;//æŠŠç’°ç‹€ä¸²åˆ—æ”¹å›ä¸€èˆ¬ä¸²åˆ—
 		
-		//11©Ò¦³node¸ê®Æ¬Û¥[
+		//11æ‰€æœ‰nodeè³‡æ–™ç›¸åŠ 
 		int sum=0;
 		temp=node.p1;
 		while(temp!=null)
